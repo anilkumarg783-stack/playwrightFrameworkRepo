@@ -8,6 +8,7 @@ class home{
         this.dashboardMenu=page.locator('//a[@href="index.php?module=Dashboard&action=index"]')
         this.documentMenu=page.locator('//a[@href="index.php?module=Documents&action=index"]')
         //test
+        //testfetch
     }
 }
 export default home 
