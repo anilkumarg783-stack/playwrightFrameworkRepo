@@ -9,6 +9,7 @@ class home{
         this.documentMenu=page.locator('//a[@href="index.php?module=Documents&action=index"]')
         //test
         //testfetch
+        // new changes
     }
 }
 export default home 
