@@ -6,6 +6,7 @@ class home{
         this.moreMenu=page.locator('//a[text()="More"]')
         this.moreVendorSubMenu=page.locator('//a[@href="index.php?module=Vendors&action=index"]')
         this.dashboardMenu=page.locator('//a[@href="index.php?module=Dashboard&action=index"]')
+        this.documentMenu=page.locator('//a[@href="index.php?module=Documents&action=index"]')
     }
 }
 export default home 
