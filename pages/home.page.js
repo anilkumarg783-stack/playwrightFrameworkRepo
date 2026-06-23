@@ -1,0 +1,10 @@
+class home{
+    constructor(page){
+        this.leadsMenu=page.locator('//a[text()="Leads"]')
+        this.opportunitiesMenu=page.locator('//a[@href="index.php?module=Potentials&action=index"]')
+        this.homeText=page.locator('a.hdrLink')
+        this.moreMenu=page.locator('//a[text()="More"]')
+        this.moreVendorSubMenu=page.locator('//a[@href="index.php?module=Vendors&action=index"]')
+    }
+}
+export default home 
