@@ -37,9 +37,10 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { 
-        testIdAttribute:"data-test",
-        ...devices['Desktop Chrome'] },
+      use: {
+        testIdAttribute: "data-test",
+        ...devices['Desktop Chrome']
+      },
     },
 
     // {
