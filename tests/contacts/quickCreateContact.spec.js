@@ -20,7 +20,7 @@ let qcContactLastName = testData.qcContactLastName
 let qcContactEmail = testData.qcContactEmail
 let qcContactAssignedTo = testData.qcContactAssignedTo
 
-test("Quick create Contact", async ({ page }) => {
+test("Quick create Contact @reg", async ({ page }) => {
 
     let loginPage = new login(page)
     let homePage = new home(page)
