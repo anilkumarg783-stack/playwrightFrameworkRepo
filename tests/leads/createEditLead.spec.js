@@ -23,7 +23,7 @@ let leadCompanyName = testData.leadCompanyName
 let leadSearchForValue = testData.leadLastName
 let leadSearchInValue = testData.leadSearchInValue
 let updateLeadFirstName = testData.updateLeadFirstName
-test("Create and Edit Lead @smoke", async ({ page }) => {
+test("Create and Edit Lead", async ({ page }) => {
   await page.goto(url)
   let loginPage = new login(page)
   let homePage = new home(page)
