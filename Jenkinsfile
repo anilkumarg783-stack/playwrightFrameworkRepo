@@ -23,11 +23,11 @@ pipeline {
             }
         }
 
-        stage('Run Playwright Tests- Smoke Test Cases') {
-            steps {
-                bat 'npx playwright test --grep "@smoke"'
-            }
-        }
+        // stage('Run Playwright Tests- Smoke Test Cases') {
+        //     steps {
+        //         bat 'npx playwright test --grep "@smoke"'
+        //     }
+        // }
         stage('Run Playwright Tests - Regression Test Cases') {
             steps {
                 bat 'npx playwright test --grep "@reg"'

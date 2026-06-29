@@ -21,7 +21,7 @@ let documentPageText = testData.documentPageText
 let documentName = testData.documentName
 let documentImportFile = testData.documentImportFile
 
-test("Document Creation", async ({ page }) => {
+test("Document Creation @reg", async ({ page }) => {
 
     let loginPage = new login(page)
     let homePage = new home(page)
