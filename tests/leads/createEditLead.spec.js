@@ -16,8 +16,9 @@ let homeTitle = testData.homeTitle
 let leadTitle = testData.leadTitle
 let creatingNewLeadTitle = testData.creatingNewLeadTitle
 let leadSalutation = testData.leadSalutation
-let leadFirstName = testData.leadFirstName
-let leadLastName = testData.leadLastName
+let leadFirstName = testData.leadFirstName+Math.round(Math.random()*10)
+// console.log(leadFirstName)
+let leadLastName = testData.leadLastName+Math.round(Math.random()*10)
 let leadCompanyName = testData.leadCompanyName
 let leadSearchForValue = testData.leadLastName
 let leadSearchInValue = testData.leadSearchInValue
