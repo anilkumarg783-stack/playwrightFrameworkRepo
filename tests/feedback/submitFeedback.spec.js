@@ -20,7 +20,7 @@ let fbEmail = testData.fbEmail
 let fbVersion = testData.fbVersion
 let fbSubmitSuccess = testData.fbSubmitSuccess
 
-test("Submit Feedback Form", async ({ page }) => {
+test("Submit Feedback Form @smoke", async ({ page }) => {
 
     let loginPage = new login(page)
     let homePage = new home(page)
