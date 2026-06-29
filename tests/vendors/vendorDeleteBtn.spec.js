@@ -22,7 +22,7 @@ let venCategory = testData.venCategory
 let venSearchForValue = testData.venName
 let venSearchInValue = testData.venSearchInValue
 
-test("Create and Delete Vendor through the Delete Button", async ({ page }) => {
+test("Create and Delete Vendor through the Delete Button @reg", async ({ page }) => {
     page.on("dialog", async (dialog) => {
         console.log(await dialog.message())
         console.log(await dialog.type())
