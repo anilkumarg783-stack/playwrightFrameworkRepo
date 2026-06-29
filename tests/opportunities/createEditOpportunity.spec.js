@@ -22,7 +22,7 @@ let oppSearchInValue = testData.oppSearchInValue
 let updateOppName = testData.updateOppName
 let UpdateOppSearchForValue = testData.updateOppName
 
-test("Create and Edit Opportunities @reg", async ({ page }) => {
+test("Create and Edit Opportunities", async ({ page }) => {
   let loginPage = new login(page)
   let homePage = new home(page)
   let opportunitiesPage = new opportunities(page)
