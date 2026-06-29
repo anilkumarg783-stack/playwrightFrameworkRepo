@@ -65,12 +65,16 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        // stage('Run Tests') {
+        //     steps {
+        //         script {
+        //             def status = bat(script: 'npx playwright test"', returnStatus: true)
+        //             if (status != 0) {
+        //                 echo "Tests failed, but continuing to generate reports..."
+                 stage('Run Playwright Tests - Regression Test Cases') {
             steps {
-                script {
-                    def status = bat(script: 'npx playwright test"', returnStatus: true)
-                    if (status != 0) {
-                        echo "Tests failed, but continuing to generate reports..."
+                bat 'npx playwright test --grep "@reg"'
+            }
                     }
                 }
             }
