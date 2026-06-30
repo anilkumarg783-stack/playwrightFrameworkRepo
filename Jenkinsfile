@@ -71,15 +71,15 @@ pipeline {
         //             def status = bat(script: 'npx playwright test"', returnStatus: true)
         //             if (status != 0) {
         //                 echo "Tests failed, but continuing to generate reports..."
-                 stage('Run Playwright Tests - Regression Test Cases') {
-            steps {
-                bat 'npx playwright test --grep "@reg"'
-            }
-                    }
+            stage('Run Playwright Tests - Regression Test Cases') {
+                steps {
+                    bat 'npx playwright test --grep "@reg"'
                 }
             }
-        }
     }
+            
+        
+    
 
     post {
         always {
