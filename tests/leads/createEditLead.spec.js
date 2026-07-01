@@ -31,7 +31,7 @@ test("Create and Edit Lead", async ({ page }) => {
   let searchSection = new searchGrid(page)
   let logoutpage = new logout(page)
 
-  //logins
+  //login
   await loginPage.loginToApplication(username, password)
   await expect(homePage.homeText).toHaveText(homeTitle);
   await homePage.leadsMenu.click()
